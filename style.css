@@ -1,0 +1,108 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    box-sizing: content-box;
+    background: linear-gradient(72deg, #3de88e 1%, #8956f3 99%);
+       
+}
+
+.container {
+    background-size: contain;  
+    border: 3px solid rgb(238, 231, 237);
+    padding: 2px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto 200px;
+    grid-auto-rows: auto auto auto auto;
+    grid-template-areas: 
+        "h h h h"
+        "c c c s"
+        "c c c s"
+        "c c c s"
+        "f f f f"
+     ;
+     
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;       
+}
+
+.header {
+    background: url(fundo3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: h;
+    display: flex;
+  
+     
+} 
+.b{
+    display: flex;
+}
+
+.fran{
+    color: rgb(3, 3, 3);
+    font-size: 45px;
+    margin: auto;
+    font-family: cursive;
+}
+
+.sidebar {
+    background-color: rgb(63, 21, 34);
+    grid-area: s;
+    list-style: none;    
+}
+
+.contest {
+    grid-area: c;
+    background: url(fundo.jpg);
+    background-size: 100%; 
+    background-position: center;
+
+}
+.footer {
+    grid-area: f;
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+
+
+li {
+    list-style: none; 
+    margin: 10px;    
+    
+}
+li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid rgb(191, 204, 9); 
+    background: rgb(141, 83, 103);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+       
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+        
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.slide{
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+ 
